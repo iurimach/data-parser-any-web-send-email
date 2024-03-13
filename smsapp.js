@@ -34,7 +34,7 @@ async function fetchData(url) {
       var message1=document.getElementById("message")
         message1.textContent=result  // რესალტი თუ შეივსება შეივსება ჰტმლში p ტეგიც
         
-      console.log("Result:", result);
+      console.log("ეს არის შედეგები/Result:", result);
       if(result.length>0){ // თუ მოძებნილი ინფორმცია 0 ზე მეტია მხოლოდ მაშინ გააგზავნე მეილი
          SendMail();    // ამ კომენტრისს ხაზებს ჩახსნი და დაიწყებს გაგზავნას ავტომატრად სმსების------------------------------------------
         }
