@@ -12,7 +12,7 @@ async function fetchData(url) {
   
       const data = await response.text(); // or response.json() if the content is JSON
   
-      if (data.includes("id")) { //აქ ვწერ სიტყვას რისი მოძებნაც მინდა
+      if (data.includes("ნაძალადევის რაიონ")) { //აქ ვწერ სიტყვას რისი მოძებნაც მინდა
         
         return data; // თუ შეცავს საძიებო ისტყვას დაბუნე დატა.
       } else {
@@ -25,7 +25,7 @@ async function fetchData(url) {
   }
   
   // Usage example:
-  const url = " https://jsonplaceholder.typicode.com/todos/1"; // ამ მისმაართიდან მომაქ
+  const url = " https://www.gwp.ge/ka/gadaudebeli/5593-tbilisis-zogiert-quchas-tskhalmomarageba-sheezghudeba "; // ამ მისმაართიდან მომაქ, აქ ჩაწერ სასურველ საიტს, პოსტს,გვერდს
   let result = ""; // ეს ტავიდან ცარილეია თუ საძიებო სიტყვას შეიცავს წამოღებული დატა ივსება რესატი
   
   (async () => {
@@ -36,7 +36,7 @@ async function fetchData(url) {
         
       console.log("Result:", result);
       if(result.length>0){ // თუ მოძებნილი ინფორმცია 0 ზე მეტია მხოლოდ მაშინ გააგზავნე მეილი
-         //SendMail();    // ამ კომენტრს ჩახსნი და დაიწყებს გაგზავნას ავტომატრად------------------------------------------
+         SendMail();    // ამ კომენტრისს ხაზებს ჩახსნი და დაიწყებს გაგზავნას ავტომატრად სმსების------------------------------------------
         }
     } catch (error) {
       console.error("Error:", error);
