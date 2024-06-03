@@ -25,7 +25,8 @@ async function fetchData(url) {
   }
   
   // Usage example:
-  const url = "https://jsonplaceholder.typicode.com/todos/1 "; // ამ მისმაართიდან მომაქ, აქ ჩაწერ სასურველ საიტს, პოსტს,გვერდს
+   //default  : https://jsonplaceholder.typicode.com/todos/1
+  const url = "https://jsonplaceholder.typicode.com/todos/1"; // ამ მისმაართიდან მომაქ, აქ ჩაწერ სასურველ საიტს, პოსტს,გვერდს
   let result = ""; // ეს ტავიდან ცარილეია თუ საძიებო სიტყვას შეიცავს წამოღებული დატა ივსება რესატი
   
   (async () => {
@@ -64,6 +65,7 @@ function SendMail(){
         
   
     })
+    console.log("sms გაგზავნილია ")
    
 
 }
